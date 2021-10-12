@@ -1,5 +1,5 @@
-/*
-* ±ê×¼¿âÔÓÀà¹¤¾ß
+ï»¿/*
+* æ ‡å‡†åº“æ‚ç±»å·¥å…·
 */
 
 #pragma once
@@ -10,7 +10,7 @@
 #include <chrono>
 
 
-// ÁÙÊ±×ª»»stringÊı×éµ½const char*Êı×é
+// ä¸´æ—¶è½¬æ¢stringæ•°ç»„åˆ°const char*æ•°ç»„
 inline static
 std::vector<const char*> to_cstr_arr(const std::vector<std::string>& str_arr)
 {
@@ -20,21 +20,21 @@ std::vector<const char*> to_cstr_arr(const std::vector<std::string>& str_arr)
 	return cstr_arr;
 }
 
-// ¼ÆËãvectorÕ¼ÓÃÄÚ´æ´óĞ¡
+// è®¡ç®—vectorå ç”¨å†…å­˜å¤§å°
 template <class T>
 inline static size_t vector_mem_size(const std::vector<T>& v)
 {
 	return v.size() * sizeof(T);
 }
 
-// ¼ÆËãlistÕ¼ÓÃÄÚ´æ´óĞ¡
+// è®¡ç®—listå ç”¨å†…å­˜å¤§å°
 template <class T>
 inline static size_t list_mem_size(const std::list<T>& v)
 {
 	return v.size() * sizeof(T);
 }
 
-// ¼ì²é²¢ÊÍ·ÅÖ¸Õë
+// æ£€æŸ¥å¹¶é‡Šæ”¾æŒ‡é’ˆ
 template <class T>
 inline static void check_and_release_ptr(T*& ptr)
 {
@@ -43,7 +43,7 @@ inline static void check_and_release_ptr(T*& ptr)
 	ptr = nullptr;
 }
 
-// »ñµÃµ±Ç°UnixÊ±¼ä´Á£¬Ò²¾ÍÊÇ1970Ê±¼ä´Á
+// è·å¾—å½“å‰Unixæ—¶é—´æˆ³ï¼Œä¹Ÿå°±æ˜¯1970æ—¶é—´æˆ³
 inline static uint64_t get_now_time()
 {
 	using namespace std;

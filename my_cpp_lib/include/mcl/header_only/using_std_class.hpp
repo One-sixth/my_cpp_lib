@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #define using_std_string using string = std::string;
 #define using_std_wstring using wstring = std::wstring;

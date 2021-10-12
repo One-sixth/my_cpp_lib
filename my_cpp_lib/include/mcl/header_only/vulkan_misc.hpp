@@ -1,5 +1,5 @@
-/*
-* vulkanÔÓÏî¹¤¾ß
+ï»¿/*
+* vulkanæ‚é¡¹å·¥å…·
 */
 
 #pragma once
@@ -7,7 +7,7 @@
 #include <vulkan/vulkan.hpp>
 
 
-// ¼ì²évulkanÖ¸¶¨À©Õ¹ÊÇ·ñ´æÔÚ
+// æ£€æŸ¥vulkanæŒ‡å®šæ‰©å±•æ˜¯å¦å­˜åœ¨
 inline static
 std::vector<bool> check_exist_exts(const std::vector<vk::ExtensionProperties>& exts,
 	const std::vector<std::string>& wait_check_exts)
@@ -26,7 +26,7 @@ std::vector<bool> check_exist_exts(const std::vector<vk::ExtensionProperties>& e
 }
 
 
-// ¼ì²évulkanÖ¸¶¨À©Õ¹²ãÊÇ·ñ´æÔÚ
+// æ£€æŸ¥vulkanæŒ‡å®šæ‰©å±•å±‚æ˜¯å¦å­˜åœ¨
 inline static
 std::vector<bool> check_exist_layers(const std::vector<vk::LayerProperties>& layers,
 	const std::vector<std::string>& wait_check_layers)

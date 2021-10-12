@@ -1,12 +1,12 @@
-/*
-* opencvÔÓÏî¹¤¾ß
+ï»¿/*
+* opencvæ‚é¡¹å·¥å…·
 */
 
 #pragma once
 #include <opencv2/opencv.hpp>
 
 
-// »ñµÃ cv::Mat ËùÕ¼×Ö½ÚÊı
+// è·å¾— cv::Mat æ‰€å å­—èŠ‚æ•°
 inline static
 size_t get_cv_im_mem_size(const cv::Mat& m)
 {
